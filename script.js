@@ -26,6 +26,9 @@ document.getElementById("decrease").onclick = function () {
 document.getElementById("submit").onclick = function () {
     if (count.textContent == random_num) {
         document.getElementById("header").textContent = `You Guessed the number ${num} and you won , wait 3 seconds to play again`
+        setTimeout(function () {
+            location.reload();
+        }, 3000)
 
 
 
